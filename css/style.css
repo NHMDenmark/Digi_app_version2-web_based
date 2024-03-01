@@ -1,0 +1,103 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  p {margin: 8px;}
+
+
+  #title {
+    
+    width: 50%; /* Define your own width for left */
+    margin: 10px;
+  }
+  
+  #meta {
+   
+    width: 40%; /* Define your own width for right */
+    margin: 10px;
+  }
+  #session_meta {
+    position: absolute;
+    margin-left: 20px;
+    padding-top: 14px;
+  }
+
+  #meta_element_title {
+    padding-right: 1em;
+    font-family: tahoma;
+    font-weight: bold;
+    width: 138px; /* This is to fix the spacing between title and value in straight vertical SINGLE lines. */
+  }
+
+  #meta_element_value {
+    font-style: italic;
+    font-family: tahoma;
+  }
+
+  #storage {
+    padding-top: 5px;
+    
+  }
+
+  label {
+    display:inline-block ;
+    font-size: large;
+    font-family: tahoma;
+    font-weight: bold;
+    width: 187px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #radio {
+    font-size: 14px;
+    font-weight: initial;
+    width: 209px;
+    padding-bottom: 10px;
+  }
+
+  #notes {
+    size: 40;
+  }
+
+  fieldset {
+    border: 0;
+    padding: 0;
+}
+
+#container_id {
+  padding-left: 2px;
+}
+
+#BGR {
+  size: 70px;
+}
+
+#chkbox {
+  font-size: 14px;
+  width: 80px;
+  padding-left: 5px;
+}
+
+#tsearch {
+  width: 130px;
+}
+
+#save {
+  background-color: green;
+  color: white;
+}
+
+#recordid {
+  font-size: 16px;
+  size: 200px;
+}
+
+#table, th, td {
+  border: 1px solid black;
+}
+
+#th {
+  background-color: lightgray;
+}

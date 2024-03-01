@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+        <title>Document</title>
+</head>
+<body>
+    
+    <section class="top" id="header" style="background-color: rgb(152, 194, 204); padding: 5px; width: 100%; height: 190px;">
+        <section id="title"><H2 style="font-family: tahoma;">DaSSCo Mass Digitization App</H2></section>
+        <section id="meta">
+            <section id="session_meta">
+                <div style="display: flex; padding-right: 1em;">
+                    <p id="meta_element_title">Logged in as:</p>
+                    <p id="meta_element_value">Harry Back</p>
+                </div>
+                    <div style="display: flex; padding-right: 1em;">
+                    <p id="meta_element_title">Institution:</p>  
+                    <p id="meta_element_value"> Natural History Museum Denmark</p>
+                    </div>
+                </div>
+                <div style="display: flex; padding-right: 1em;">
+                    <p id="meta_element_title">Collection:</p>  
+                    <p id="meta_element_value"> NHMD Vascular plants</p>
+                </div>
+                    <div style="display: flex; padding-right: 1em;">
+                    <p id="meta_element_title">Version number:</p>
+                    <p id="meta_element_value">1.1.32</p> 
+                </div>
+            </section>
+        </section>
+        
+        
+    </section>
+
+    <section id="location" style="background-color: rgb(223, 238, 219); padding: 5px; width: 100%; height: 280px; border-bottom: solid;">
+        <form id="storage">
+            <label for="storageSearch">Storage location:</label>
+            <input type="search" id="storageSearch" name="sSearch">
+            
+        </form>
+        <label for="type">Preparation type:</label>
+
+        <select name="type_status" id="types">
+            <option value="default"></option>    
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+        <label for="type">Type status:</label>
+
+        <select name="type_status" id="types">
+            <option value="default">None</option>    
+            <option value="type">Type</option>
+            <option value="Allolectotype">Allolectotype</option>
+            <option value="Alloneotype">Alloneotype</option>
+            <option value="Allotype">Allotype</option>
+        </select>
+        <br>
+        <label for="BGR">Broad geographic region:</label>
+
+        <select name="BG_regions" id="BGR">
+            <option value="default"></option>    
+            <option value="Denmark">Denmark</option>
+            <option value="Fennoscandia">Fennoscandia</option>
+            <option value="Grønland">Grønland</option>
+            <option value="Europe">Europe</option>
+        </select> 
+        
+  
+        <br>          
+        <form id="taxon_search">
+            <label for="tsearch">Taxonomic name:</label>
+            <input type="search" id="tsearch" name="gsearch">
+            
+          </form>
+    </section>
+
+    <!-- Taxonomic section -->
+
+    <section id="taxonomic_section", style="background-color: lightskyblue; padding: 5px; width: 100%; height: 370px;">
+        <label id="chkbox" for="damaged_label">Damaged specimen:</label><input type="checkbox" id="damaged" name="damagedChk" value="damaged">
+        
+        <label id="chkbox" for="damaged_label">Specimen obscured:</label><input type="checkbox" id="obscured" name="obscuredChk" value="obscured">
+        <label id="chkbox" for="damaged_label">Label obscured:</label><input type="checkbox" id="obscured_label" name="labelChk" value="labeled">
+        <br>
+        <fieldset>
+            <div class="containers">
+              <label style="padding-left: 0px;">Continer type:</label>  
+              <input type="radio" class="radio" name="single" value="single_specimen" id="single" />
+              
+              <label id="radio" for="singleSpecimen">Single specimen object</label>
+              <input type="radio" class="radio" name="mso" value="mso" id="multiple_specimens" />
+              <label id="radio" for="mso">Multiple specimens on one object</label>
+              <input type="radio" class="radio" name="mos" value="mos" id="multiple_objects" />
+              <label id="radio" for="mso">One specimen on multiple objects</label>
+            </div>            
+          </fieldset>
+          
+          <form id="container_id">
+            <label for="containerid">Container ID:</label>
+            <input type="text" id="container_identifier" name="container" size="50">            
+        </form>
+
+          <form id="notes">
+            <label for="notes_input">Notes:</label>
+            <input type="text" id="notes" name="notes" size="75">
+            
+        </form>
+        
+        <form id="barcode">
+            <label for="barcode">Barcode:</label>
+            <input type="text" id="barcode" name="notes" size="75">
+            
+        </form>
+        <label id="recordid">Record ID</label>
+        <fieldset style="display: inline;">
+            <div class="buttons">
+                <button id="save" type="button" style="margin-right: 25px;">SAVE</button>
+                <button id="go_back" type="button">GO BACK</button>
+                <button id="go_forward" type="button">GO FORWARDS</button>
+                <button id="clear" type="button">CLEAR FORM</button>
+
+            </div>            
+          </fieldset>
+          <section id="tabler" style="border: 2px rgb(80, 53, 53) double; width: 80%; margin-left: 165px;">
+          <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0; width: 80%; }
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal; background-color: white;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:tahoma, sans-serif;font-size:16px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal; background-color: rgb(235, 235, 216);}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+            <table class="tg", style="width: 100%;">
+            <thead>
+              <tr>
+                <th class="tg-header">ID</th>
+                <th class="tg-header">Catalog number</th>
+                <th class="tg-header">Taxon fullname</th>
+                <th class="tg-header">Container name</th>
+                <th class="tg-header">Geo region name</th>
+                <th class="tg-header">Storage name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+            </tbody>
+            </table>
+          </section>
+</body>
+</html>
